@@ -1,0 +1,21 @@
+<div class="Front-End-Test---Home-view ">
+    <div class="Rectangle-2-Copy HACKER-NEWS">
+        <span class="Text-Style">
+            <img aria-label="Hacker news" fill ngSrc="assets/hacker-news.svg" alt="HACKER NEWS">
+        </span>
+    </div>
+    <div class="text-center">
+            <button class="Rectangle" (click)="allItems = !allItems">
+                <span class="All Text-Style-2">
+                    All
+                </span>
+            </button>
+            <button class="Rectangle" (click)="onlyFaves = !onlyFaves">
+                <span class="My-faves">
+                    My faves
+                  </span>
+            </button>
+    </div>
+    <app-all-items *ngIf="allItems"></app-all-items>
+    <app-only-faves *ngIf="onlyFaves"></app-only-faves>
+</div>
