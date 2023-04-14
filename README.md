@@ -1,6 +1,6 @@
 # ApplyDigitalTest
 
-This project was generated for Apply Digital to resolve the Test Challenge with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+This project was generated for Apply Digital to resolve the Test Challenge with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.  Please, read below the assumptions took for the resolution
 
 ## Development server
 
@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+##Assumptions
+There is not message to display to the user in case the search ends in empty result due to discarding the items that are not having author or story_url or story_title or created_at data 
+

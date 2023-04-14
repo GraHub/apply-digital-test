@@ -31,7 +31,6 @@
 .Rectangle {
     width: 6.125rem;
     height: 1.938rem;
-    padding: 0.188rem 1rem 0 1.063rem;
     border-radius: 2px;
     border: solid 1px var(--azure);
 }

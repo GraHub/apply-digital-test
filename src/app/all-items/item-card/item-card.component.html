@@ -1,0 +1,25 @@
+<div>
+    <div *ngIf="items.length > 0">
+        <div class="row row-cols-2 Cards">
+            <div *ngFor="let item of items">
+                <div class="Rectangle">
+                    <div class="row">
+                        <div class="col d-flex justify-content-start" (click)="openUrl(item.story_url)">
+                            <div>
+                                <img src="assets/iconmonstr-time-2.png" srcset="assets/iconmonstr-time-2@2x.png 2x,
+                                assets/iconmonstr-time-2@3x.png 3x" class="iconmonstr-time-2">
+                            </div>
+                            <div>{{item.story_title}}</div>
+                        </div>
+                        <div class="col d-flex justify-content-end">
+                            <button (click)="saveAsFavorite()" class="Rectangle---Faves">
+                                <img src="assets/iconmonstr-favorite-3.png" srcset="assets/iconmonstr-favorite-3@2x.png 2x,
+                                assets/iconmonstr-favorite-3@3x.png 3x" class="iconmonstr-favorite-3">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
